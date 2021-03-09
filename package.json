@@ -4,7 +4,7 @@
   "description": "server application for recipes",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon start"
+    "start": "node start"
   },
   "repository": {
     "type": "git",
