@@ -4,7 +4,9 @@ const got = require('got');
 const jsdom = require('jsdom');
 const {JSDOM} = jsdom;
 const port = 80;
-
+app.get('/', function(req, res){
+    res.send('ciao sono online');
+})
 app.get('/ricerca/:key', (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     got('https://www.giallozafferano.it/ricerca/'+req.params.key+"/").then(response =>{
